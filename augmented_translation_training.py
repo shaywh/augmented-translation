@@ -20,8 +20,8 @@ class AugmentedTranslation(TranslationTask):
     @staticmethod
     def add_args(parser):
         # Add your arguments here
-        parser.add_argument('--original-data', required=True,
-                            help='Path to un-processed training data')
+        parser.add_argument('--unprocessed-data', required=True,
+                            help='Path of un-processed training data')
         super(AugmentedTranslation, AugmentedTranslation).add_args(parser)
 
     @classmethod
